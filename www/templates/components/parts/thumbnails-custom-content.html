@@ -1,0 +1,38 @@
+<!--
+自定义缩略图内容        http://v3.bootcss.com/components/#thumbnails-custom-content
+
+
+ {
+          "name":"缩略图-四张所略图",
+          "templateUrl":"templates/components/parts/thumbnails.html",
+          "thumbnails":[
+          {
+          "title":"标题",
+          "summary":"描述",
+          "image":"背景图片"
+            "btn":{   按钮
+                "link":"index", 默认#
+                 "name":"查看"   默认查看
+              }
+          }]
+  }
+
+
+
+Anotation:
+图片:242*200
+-->
+
+
+<div class="row">
+    <div ng-repeat="thumbnail in myData.thumbnails" class="col-sm-6 col-md-4" >
+        <div  class="thumbnail">
+            <img src="{{thumbnail.image}}" alt="...">
+            <div class="caption">
+                <h3>{{thumbnail.title}}</h3>
+                <p>{{thumbnail.summary}}</p>
+                <p><a ui-sref="{{thumbnail.btn.link}} || #" class="btn btn-default" role="button">{{thumbnail.btn.name || "查看"}}</a></p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,28 +1,68 @@
 {
   "dataType": "customer setting",
-  "navbar": {
-    "templateUrl": "templates/navbar/simple.html",
-    "componentStyle":"big",
-    "navbarColor": "black",
-    "fontColor": "white"
-  },
-  "footbar": {
-    "templateUrl": "templates/footbar/.html"
-  },
   "pages": {
     "index": {
       "pageName": "/index",
       "pageComponents": [
         {
-          "name":"介绍",
-          "templateUrl": "templates/navbar/.html",
-          "summary1": "最具规模网站建设和系统开发",
-          "detail1": "The largest construction site",
-          "bgImage": "http://www.seakong.cn/demo/bg/1.jpg"
+          "name":"巨幕",
+          "templateUrl": "templates/components/parts/jumbotron.html",
+          "title":"旅烨集团",
+          "p":"旅烨集团是一家公司",
+          "btn":{
+            "link":"about",
+            "name":"关于"
+          }
+        },
+        {
+          "name":"缩略图-四张所略图",
+          "templateUrl":"templates/components/parts/thumbnails.html",
+          "images":["http://www.alvye.cn/statics/images/2016/kmtiandu.png","http://www.alvye.cn/statics/images/2016m/banner3.jpg"]
+        },
+        {
+          "name":"内容缩略图组 随意多个缩略图",
+          "templateUrl":"templates/components/parts/thumbnails-custom-content.html",
+          "thumbnails":[
+            {
+              "image":"http://www.alvye.cn/statics/images/2016/kmtiandu.png",
+              "title":"旅烨集团",
+              "summary":"旅烨集团是一家互联网公司",
+              "btn":{
+                "link":"index",
+                "name":"主页"
+              }
+            }
+          ,{
+              "image":"http://www.alvye.cn/statics/images/2016/kmtiandu.png",
+              "title":"创立五周年",
+              "summary":"旅烨创立五周年了",
+              "btn":{
+                "link":"about",
+                "name":"关于"
+              }
+            }
+          ]
+        },
+        {
+        "name":"海互动的 文案部分",
+          "templateUrl":"templates/components/sea-article.html"
         }
       ]
     },
+
+
+
+
+
+
+
+
+
+
+
+
     "about": {
+
       "pageName": "/about",
       "pageComponents": [
         {
