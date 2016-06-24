@@ -36,11 +36,11 @@
 
 
 <!--navbar-->
-<div ng-include="customer.navbar.templateUrl" ng-init=""></div>
+<div ng-include="customer.navbar.templateUrl" ng-init="myData = customer.navbar"></div>
 <!--pages-->
 <div ui-view=""></div>
 <!--footbar-->
-<div ng-include="customer.footbar.templateUrl" ng-init=""></div>
+<div ng-include="customer.footbar.templateUrl" ng-init="myData=customer.footbar"></div>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
