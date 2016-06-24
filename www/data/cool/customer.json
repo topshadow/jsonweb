@@ -8,49 +8,7 @@
   },
   "footbar": {
     "templateUrl": "templates/footbar/.html"
-  },
-  "pages": {
-    "index": {
-      "pageName": "/index",
-      "pageComponents": [
-        {
-          "name":"介绍",
-          "templateUrl": "templates/navbar/.html",
-          "summary1": "最具规模网站建设和系统开发",
-          "detail1": "The largest construction site",
-          "bgImage": "http://www.seakong.cn/demo/bg/1.jpg"
-        }
-      ]
-    },
-    "about": {
-      "pageName": "/about",
-      "pageComponents": [
-        {
-          "name":"简述",
-          "templateUrl": "templates/components/summary/summary.html",
-          "title": "关于我们的页面"
-        }
-      ]
-    },
-    "contact":{
-      "pageName":"/contact",
-      "pageComponents":[
-        {
-          "name":"海互动介绍",
-          "templateUrl":"templates/components/introduction/haihudong.html",
-          "summary1":"这是联系页面的海互动介绍",
-          "detail1":"联系页面的海互动介绍背景还是鲨鱼吗",
-          "bgImage":"http://img2.imgtn.bdimg.com/it/u=307641826,2680465138&fm=21&gp=0.jpg"
-        },
-        {
-          "name":"抄袭的海互动介绍组件,仅仅是把图片改了一下",
-          "templateUrl":"templates/components/introduction/haihudong.html",
-          "summary":"最有风格的程序员",
-          "detail":"除了我还有谁呢,呵呵",
-          "bgImage":"http://www.seakong.cn/demo/bg/1.jpg"
-        }
-
-      ]
-    }
   }
+
+
 }

@@ -1,0 +1,24 @@
+<header di="header">
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand " href="#" > <img src="{{default.logo}}"/></a>
+    </div>
+    <div class="collapse navbar-collapse " id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li ng-repeat="item in  (customer.navbar.menuList || [{link:'index',name:'主页'},
+                    {link:'about',name:'关于我们'},
+                    {link:'products',name:'产品列表'},
+                    {link:'contact',name:'联系我们'}] )  "><a href ui-sref="{{item.link}}">{{item.name}}</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+
+
