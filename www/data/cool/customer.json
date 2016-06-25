@@ -1,10 +1,13 @@
 {
   "dataType": "customer setting",
+  "navbar":{
+    "templateUrl":"templates/navbar/blog.html"
+  },
   "pages": {
     "index": {
       "pageName": "/index",
       "pageComponents": [
-         {
+        {
           "name": "海互动的 文案部分",
           "templateUrl": "templates/components/sea-article.html",
           "title": "旅烨集团",
@@ -29,7 +32,7 @@
             "image" : "http://www.seakong.cn/demo/team/1.jpg",
             "name" : "小李子",
             "post" : "代码"
-            },
+          },
             {
               "image" : "http://www.seakong.cn/demo/team/1.jpg",
               "name" : "小李子",
@@ -53,9 +56,92 @@
         {
           "name" : "sea-contact-wrap",
           "templateUrl":"templates/components/sea-contact-wrap.html"
+        },
+        {
+          "name" : "agreedo-banner",
+          "templateUrl":"templates/components/banner/agreedo-banner.html"
+        },
+        {
+          "name":"bootstrap 图片轮播",
+          "templateUrl":"templates/components/banner/bootstrap-banner.html",
+          "type":"with-title",
+          "images":[{
+            "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
+            "title":"标题1",
+            "summary":"简述"
+          },
+            {
+              "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
+              "title":"标题2",
+              "summary":"简述"
+            },
+            {
+              "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
+              "title":"标题3",
+              "summary":"简述"
+            }
+          ]
+        },
+        {
+          "name":"typescript banner",
+          "templateUrl":"templates/components/banner/typescript-banner.html"
         }
 
       ]
     }
+    ,
+      "about":{
+        "pageName":"/about",
+        "pageComponents":[{
+            "name":"simple-product",
+            "templateUrl":"templates/components/product/simple-product.html"
+        },
+          {
+            "name":"zarget-product-banner",
+            "templateUrl":"templates/components/product/zarget-product-banner.html"
+          },
+          {
+            "name":"sea-product-list",
+            "templateUrl":"templates/components/product/sea-product.html"
+          }
+        ,
+          {
+            "name":"图片缩略图",
+            "templateUrl":"templates/components/banner/thumbnails-custom-content.html",
+            "thumbnails":[
+              {
+                "image":"http://www.seakong.cn/demo/team/1.jpg",
+                "title":"标题",
+                "summary":"简述"
+              },
+              {
+                "image":"http://www.seakong.cn/demo/team/1.jpg",
+                "title":"标题",
+                "summary":"简述"
+              },
+              {
+                "image":"http://www.seakong.cn/demo/team/1.jpg",
+                "title":"标题",
+                "summary":"简述"
+              },
+              {
+                "image":"http://www.seakong.cn/demo/team/1.jpg",
+                "title":"标题",
+                "summary":"简述"
+              },
+              {
+                "image":"http://www.seakong.cn/demo/team/1.jpg",
+                "title":"标题",
+                "summary":"简述"
+              }
+            ]
+          }
+
+        ]
+      }
+
+
+
+
   }
 }

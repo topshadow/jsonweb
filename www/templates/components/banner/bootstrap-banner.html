@@ -1,0 +1,55 @@
+<!--
+bootstrap 图片轮播
+
+"images":[{
+            "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
+            "summary":"简述"
+          },
+            {
+              "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
+              "summary":"简述"
+            },
+            {
+              "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
+              "summary":"简述"
+            }
+  ]
+type : with-title
+
+
+-->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" ">
+
+    <ol class="carousel-indicators">
+        <li ng-repeat="pic in myData.images"
+            data-target="#carousel-example-generic" ng-class="{'active':$index==0 }" data-slide-to="{{$index}}" ></li>
+</ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+
+
+    <!--带有标题的图片轮播-->
+    <div  ng-repeat="pic in myData.images" ng-class="{'item':true,'active':$index==0}" ng-show="myData.type=='with-title'">
+        <img src="{{pic.src}}" alt="...">
+        <div class="carousel-caption">
+            <h3 ng-show="myData.type=='with-title'">{{pic.title}}</h3>
+            <p>{{pic.summary}}</p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
