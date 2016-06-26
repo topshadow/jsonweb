@@ -8,91 +8,104 @@
       "pageName": "/index",
       "pageComponents": [
         {
+          "name":"bootstrap 图片轮播",
+          "templateUrl":"templates/components/banner/bootstrap-banner.html",
+          "type":"with-title",
+          "images":[{
+            "src":"./pic/07dab6fd5266d016e7ec1b06952bd40735fa352c.jpg",
+            "title":"创意型设计",
+            "summary":"一直秉持着 帮助民族企业与世界互联的企业宗旨，打造业内知名的网站建设品牌。从市场的角度和客户的需求出发，帮助企业及产品树立良好的形象，拓展市场空间，提高企业竞争优势。"
+          },
+            {
+              "src":"./pic/48c7a7efce1b9d1663811e4ff1deb48f8c54645f.jpg",
+              "title":"1000台云服务器",
+              "summary":"拥有近1000太高端云计算服务器,上海,成都,长沙,武汉万兆机房介入国家骨干网络"
+            },
+            {
+              "src":"./pic/13f4e0fe9925bc31f7b784b65cdf8db1cb137033.jpg",
+              "title":"上海网站建设首选品牌-上海旅烨网络科技有限公司",
+              "summary":"一直秉持着“帮助民族企业与世界互联”的企业宗旨，打造业内知名的网站建设品牌。从市场的角度和客户的需求出发，帮助企业及产品树立良好的形象，拓展市场空间，提高企业竞争优势。"
+            }
+          ]
+        },
+        {
           "name": "海互动的 文案部分",
           "templateUrl": "templates/components/sea-article.html",
-          "title": "旅烨集团",
-          "p1": "旅烨集团,联合科技",
-          "p2": "lvye",
+          "title": "旅烨集团,联合科技",
+          "p1": "核心团队拥有多年行业经验的资深团队，涵盖创意，策略，技术等各领域专业人才，我们坚信每一个成功项目是良好团队合作的成果，为客户提供专业有效的网络解决方案。",
+          "p2": "目前集团拥有12家下属控股企业，产业范围涵盖科技、教育、金融、云计算、创业投资等领域。集团拥有专业技术人员近600人，办公场地近8000平米，目前已经为超过18000家客户提供了服务，客户遍布北美、欧洲、韩国、上海、北京、广州、长沙、重庆、成都、武汉等地区，其中国内外多家知名企业选择了旅烨。",
           "btn": {
-            "link": "index",
+            "link": "production",
             "name": "View"
           }
         },
         {
           "name":"海互动 section",
           "templateUrl":"templates/components/sea-section.html",
+          "backgroundImage":"./pic/934ad11373f08202a4fa161149fbfbedab641bb1.jpg",
           "title":""
-        },
-        {
-          "name" : "海互动团队内容",
-          "templateUrl":"templates/components/sea-team-content.html",
-          "teamSummary":"旅烨集团",
-          "teamSummary2": "http://www.seakong.cn/demo/team/1.jpg",
-          "teammates":[{
-            "image" : "http://www.seakong.cn/demo/team/1.jpg",
-            "name" : "小李子",
-            "post" : "代码"
-          },
-            {
-              "image" : "http://www.seakong.cn/demo/team/1.jpg",
-              "name" : "小李子",
-              "post" : "代码"
-            },
-            {
-              "image" : "http://www.seakong.cn/demo/team/1.jpg",
-              "name" : "小李子",
-              "post" : "代码"
-            },
-            {
-              "image" : "http://www.seakong.cn/demo/team/1.jpg",
-              "name" : "小李子",
-              "post" : "代码"
-            }]
         },
         {
           "name":"海互动 服务类型",
           "templateUrl":"templates/components/sea-service-content.html"
         },
         {
-          "name" : "sea-contact-wrap",
-          "templateUrl":"templates/components/sea-contact-wrap.html"
-        },
-        {
           "name" : "agreedo-banner",
           "templateUrl":"templates/components/banner/agreedo-banner.html"
         },
-        {
-          "name":"bootstrap 图片轮播",
-          "templateUrl":"templates/components/banner/bootstrap-banner.html",
-          "type":"with-title",
-          "images":[{
-            "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
-            "title":"标题1",
-            "summary":"简述"
-          },
-            {
-              "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
-              "title":"标题2",
-              "summary":"简述"
-            },
-            {
-              "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
-              "title":"标题3",
-              "summary":"简述"
-            }
-          ]
-        },
+
         {
           "name":"typescript banner",
-          "templateUrl":"templates/components/banner/typescript-banner.html"
+          "templateUrl":"templates/components/banner/typescript-banner.html",
+          "title":"旅烨品质,见证品牌服务",
+          "backgroundImage":"./pic/c2029245d688d43f677114dc7f1ed21b0ff43bc1.jpg"
         }
-
       ]
     }
     ,
-      "about":{
-        "pageName":"/about",
-        "pageComponents":[{
+      "production":{
+        "pageName":"/production",
+        "pageComponents":[
+          {
+            "name":"twibble-prodcut",
+            "templateUrl":"templates/components/product/twibble-product.html",
+            "itemlist":[{
+              "icon":"fa-group",
+              "title":"强大的团队",
+              "summary":"600人大型团队"
+            },
+              {
+                "icon":"fa-clock-o",
+                "title":"高效率",
+                "summary":"职责分工明确"
+              },
+              {
+                "icon":"fa-life-ring",
+                "title":"专业",
+                "summary":"多年的团队经验"
+              },{
+                "icon":"fa-group",
+                "title":"强大的团队",
+                "summary":"600人大型团队"
+              },
+              {
+                "icon":"fa-clock-o",
+                "title":"高效率",
+                "summary":"职责分工明确"
+              },
+              {
+                "icon":"fa-life-ring",
+                "title":"专业",
+                "summary":"多年的团队经验"
+              }
+            ]
+          },
+          {
+            "name":"fontawsome-product",
+            "templateUrl" : "templates/components/product/fontawsome-product.html"
+          },
+
+          {
             "name":"simple-product",
             "templateUrl":"templates/components/product/simple-product.html"
         },
@@ -138,10 +151,52 @@
           }
 
         ]
-      }
-
-
-
-
+      },
+    "team":{
+      "pageName":"/team",
+      "pageComponents":[
+        {
+  "name" : "海互动团队内容",
+  "templateUrl":"templates/components/sea-team-content.html",
+  "title":"富有激情的年轻人",
+          "teamSummary":"我们是一群有创意的,热血澎湃的年轻人",
+  "teamSummary2": "还在等着什么,快加入我们吧",
+  "teammates":[{
+    "image" : "./pic/header/1.jpg",
+    "name" : "文文",
+    "post" : "UI 设计师"
+  },
+    {
+      "image" : "./pic/header/2.jpg",
+      "name" : "涛涛",
+      "post" : "Web前端工程师"
+    },
+    {
+      "image" : "./pic/header/3.jpeg",
+      "name" : "梅梅",
+      "post" : "UE 交互设计师"
+    },
+    {
+      "image" : "./pic/header/4.jpg",
+      "name" : "小李子",
+      "post" : "UI设计师"
+    }]
+},
+        {
+        "templateUrl":"templates/components/team/bootstrap-media-object.html"
+      }]
+    },
+    "about":{
+      "pageName":"/about",
+      "pageComponents":[{
+      "name" : "sea-contact-wrap",
+      "templateUrl":"templates/components/about/sea-contact-wrap.html"
+    },
+        {
+          "name":"twibble-about 一个圆头像",
+          "templateUrl":"templates/components/about/twibble-about.html"
+        }
+      ]
+    }
   }
 }

@@ -25,7 +25,7 @@ angular.module('app.route', [])
                 })
             .state('production',
                 {
-                    url:"/prodction",
+                    url:"/production",
                     teamplateUrl: "templates/production.html",
                     controller:"allCtrl"
                 });

@@ -99,8 +99,8 @@ angular.module('app.route', [])
                 })
             .state('production',
                 {
-                    url:"/prodction",
-                    teamplateUrl: "templates/production.html",
+                    url:"/production",
+                    templateUrl: "templates/production.html",
                     controller:"allCtrl"
                 });
 
