@@ -151,24 +151,25 @@
     },
     "about":{
       "pageName":"/about",
-      "pageComponents":[{
-      "name" : "sea-contact-wrap",
-      "templateUrl":"templates/components/about/sea-contact-wrap.html"
-    },
+      "pageComponents":[
         {
           "name":"twibble-about 一个圆头像",
           "templateUrl":"templates/components/about/twibble-about.html",
           "images":[
             {"src":"http://www.alvye.cn/statics/images/2016/ad_year02.png",
-            "title":"旅烨教育",
-            "summary":"集团万人实习招聘计划正式启动 储备技术 招聘岗位：网页设计、PHP、IOS、安卓开发"},
+              "title":"旅烨教育",
+              "summary":"集团万人实习招聘计划正式启动 储备技术 招聘岗位：网页设计、PHP、IOS、安卓开发"},
             {"src":"http://www.alvye.cn/statics/images/2016/ad_year05.png",
               "title":"旅烨模板云即将上线",
               "summary":"稳定、高效、快捷、安全 更好践行“帮助民族企业与世界互联”的使命"
-
             }
           ]
-        }
+        },
+        {
+      "name" : "sea-contact-wrap",
+      "templateUrl":"templates/components/about/sea-contact-wrap.html"
+    }
+
       ]
     }
   }
