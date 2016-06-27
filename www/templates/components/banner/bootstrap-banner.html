@@ -11,7 +11,10 @@ bootstrap 图片轮播
             },
             {
               "src":"http://pic.90sjimg.com/back_pic/u/00/01/53/12/55e64c37e9abf.jpg",
+              "title":"",
+              "titleColor":"",
               "summary":"简述"
+              "summaryColor",""
             }
   ]
 type : with-title
@@ -35,8 +38,8 @@ type : with-title
     <div  ng-repeat="pic in myData.images" ng-class="{'item':true,'active':$index==0}" ng-show="myData.type=='with-title'">
         <img src="{{pic.src}}" alt="..." class="img-responsive" width="100%">
         <div class="carousel-caption">
-            <h3 ng-show="myData.type=='with-title'">{{pic.title}}</h3>
-            <p>{{pic.summary}}</p>
+            <h3 ng-show="myData.type=='with-title'" style="color:{{pic.titleColor}}">{{pic.title}}</h3>
+            <p style="color:{{pic.summaryColor}}">{{pic.summary}}</p>
         </div>
     </div>
 
