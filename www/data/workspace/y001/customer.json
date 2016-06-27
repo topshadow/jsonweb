@@ -1,7 +1,10 @@
 {
   "dataType": "customer setting",
   "navbar":{
-    "templateUrl":"templates/navbar/blog.html"
+    "templateUrl":"templates/navbar/nav4.html"
+  },
+  "footbar":{
+    "templateUrl":"templates/footbar/foot2.html"
   },
   "pages": {
     "index": {
@@ -28,6 +31,13 @@
             }
           ]
         },
+
+        {
+          "name":"海互动 section",
+          "templateUrl":"templates/components/sea-section.html",
+          "backgroundImage":"./pic/934ad11373f08202a4fa161149fbfbedab641bb1.jpg",
+          "title":""
+        },
         {
           "name": "海互动的 文案部分",
           "templateUrl": "templates/components/sea-article.html",
@@ -38,27 +48,6 @@
             "link": "production",
             "name": "View"
           }
-        },
-        {
-          "name":"海互动 section",
-          "templateUrl":"templates/components/sea-section.html",
-          "backgroundImage":"./pic/934ad11373f08202a4fa161149fbfbedab641bb1.jpg",
-          "title":""
-        },
-        {
-          "name":"海互动 服务类型",
-          "templateUrl":"templates/components/sea-service-content.html"
-        },
-        {
-          "name" : "agreedo-banner",
-          "templateUrl":"templates/components/banner/agreedo-banner.html"
-        },
-
-        {
-          "name":"typescript banner",
-          "templateUrl":"templates/components/banner/typescript-banner.html",
-          "title":"旅烨品质,见证品牌服务",
-          "backgroundImage":"./pic/c2029245d688d43f677114dc7f1ed21b0ff43bc1.jpg"
         }
       ]
     }
@@ -101,55 +90,18 @@
             ]
           },
           {
-            "name":"fontawsome-product",
-            "templateUrl" : "templates/components/product/fontawsome-product.html"
+            "name":"sea-product-list",
+            "templateUrl":"templates/components/product/sea-product.html",
+            "images":[{"src":"http://www.seakong.cn/img/work/201605241.jpg"},
+              {"src":"http://www.seakong.cn/img/work/2015080-0.jpg"},
+              {"src":"http://www.seakong.cn/img/work/babalax.jpg"},
+              {"src":" http://www.seakong.cn/img/work/yblx.jpg"}
+            ]
           },
-
-          {
-            "name":"simple-product",
-            "templateUrl":"templates/components/product/simple-product.html"
-        },
           {
             "name":"zarget-product-banner",
             "templateUrl":"templates/components/product/zarget-product-banner.html"
-          },
-          {
-            "name":"sea-product-list",
-            "templateUrl":"templates/components/product/sea-product.html"
           }
-        ,
-          {
-            "name":"图片缩略图",
-            "templateUrl":"templates/components/banner/thumbnails-custom-content.html",
-            "thumbnails":[
-              {
-                "image":"http://www.seakong.cn/demo/team/1.jpg",
-                "title":"标题",
-                "summary":"简述"
-              },
-              {
-                "image":"http://www.seakong.cn/demo/team/1.jpg",
-                "title":"标题",
-                "summary":"简述"
-              },
-              {
-                "image":"http://www.seakong.cn/demo/team/1.jpg",
-                "title":"标题",
-                "summary":"简述"
-              },
-              {
-                "image":"http://www.seakong.cn/demo/team/1.jpg",
-                "title":"标题",
-                "summary":"简述"
-              },
-              {
-                "image":"http://www.seakong.cn/demo/team/1.jpg",
-                "title":"标题",
-                "summary":"简述"
-              }
-            ]
-          }
-
         ]
       },
     "team":{
@@ -183,19 +135,41 @@
     }]
 },
         {
-        "templateUrl":"templates/components/team/bootstrap-media-object.html"
+        "templateUrl":"templates/components/team/bootstrap-media-object.html",
+          "images":[{
+            "src":"http://www.alvye.cn/statics/images/2016/team01.jpg",
+            "title":"旅烨户外互动",
+            "summary":"上海旅烨网络科技有限公司一直秉承着“帮助民族企业与世界互联”的使命，经过多年的发展，集团拥有12家下属控股企业，产业范围涵盖科技、教育、金融、云计算、创业投资等领域。集团拥有专业技术人员近600人，办公场地近8000平米，目前已经为超过18000家客户提供了服务，客户遍布北美、欧洲、韩国、上海、北京、广州、长沙、重庆、成都、武汉等地区，其中国内外多家知名企业选择了旅烨。",
+            "position":"pull-left"
+          },
+            {"src":"http://www.alvye.cn/statics/images/2016/team05.jpg",
+            "title":"旅烨互联网学院首届元旦联欢晚会",
+            "summary":"企业文化具有使企业成员从内心产生一种高昂情绪和奋发进取精神的效应。企业文化把尊重人作为中心内容，以人的管理为中心。",
+              "position":"pull-right"
+            }]
       }]
     },
     "about":{
       "pageName":"/about",
-      "pageComponents":[{
-      "name" : "sea-contact-wrap",
-      "templateUrl":"templates/components/about/sea-contact-wrap.html"
-    },
+      "pageComponents":[
         {
           "name":"twibble-about 一个圆头像",
-          "templateUrl":"templates/components/about/twibble-about.html"
-        }
+          "templateUrl":"templates/components/about/twibble-about.html",
+          "images":[
+            {"src":"http://www.alvye.cn/statics/images/2016/ad_year02.png",
+              "title":"旅烨教育",
+              "summary":"集团万人实习招聘计划正式启动 储备技术 招聘岗位：网页设计、PHP、IOS、安卓开发"},
+            {"src":"http://www.alvye.cn/statics/images/2016/ad_year05.png",
+              "title":"旅烨模板云即将上线",
+              "summary":"稳定、高效、快捷、安全 更好践行“帮助民族企业与世界互联”的使命"
+            }
+          ]
+        },
+        {
+      "name" : "sea-contact-wrap",
+      "templateUrl":"templates/components/about/sea-contact-wrap.html"
+    }
+
       ]
     }
   }
