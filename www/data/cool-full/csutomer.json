@@ -77,8 +77,9 @@
           "templateUrl":"templates/components/product/zarget-product-banner.html"
         },
         {
-          "name":"sea-product-list",
+          "name":"sea-product ",
           "templateUrl":"templates/components/product/sea-product.html"
+
         }
       ,
         {

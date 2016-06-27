@@ -24,7 +24,7 @@
             <!--</div>-->
             <div class="col-xs-8 col-sm-5 col-md-5 col-lg-5">
                 <!--<div class="navbar-search navbar-left">-->
-                <form class="navbar-form-mc padding-tb" method="get" action="/course/search" role="search">
+                <form class="navbar-form-mc padding-tb" method="get" action="/course/search" role="search" ng-hide="true">
                     <div class="input-group input-group-nav">
                         <input type="text" class="form-control" id="input-search" name="key" placeholder="查找课程...">
                                 <span class="input-group-btn">
@@ -39,10 +39,10 @@
             <div class="hidden-xs col-sm-5 col-md-4 col-lg-4">
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
-                        <li id="nav-index"><a href="/">首页</a></li>
-                        <li id="nav-course" class="active"><a href="/course">课程</a></li>
-                        <li id="nav-notice"><a href="/announcement">公告</a></li>
-                        <li><a href="/">登录</a></li>
+                        <li id="nav-index"><a  ui-sref="index">首页</a></li>
+                        <li id="nav-course" ><a ui-sref="production">产品</a></li>
+                        <li id="nav-notice"><a ui-sref="team">团队</a></li>
+                        <li><a ui-sref="about">关于</a></li>
 
                     </ul>
                 </div>

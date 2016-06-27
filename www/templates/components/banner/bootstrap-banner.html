@@ -19,7 +19,7 @@ type : with-title
 
 -->
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" ng-init="carousel()" >
 
     <ol class="carousel-indicators">
         <li ng-repeat="pic in myData.images"
@@ -52,5 +52,3 @@ type : with-title
         <span class="sr-only">Next</span>
     </a>
 </div>
-
-
