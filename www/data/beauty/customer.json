@@ -1,13 +1,13 @@
 {
   "dataType": "customer setting",
   "navbar": {
-    "templateUrl": "templates/navbar/nav3.html",
+    "templateUrl": "templates/navbar/simple2.html",
     "componentStyle":"small",
     "navbarColor": "black",
     "fontColor": "white"
   },
   "footbar": {
-    "templateUrl": "templates/footbar/foot2.html"
+    "templateUrl": "templates/footbar/foot4.html"
   },
   "pages": {
     "index": {
