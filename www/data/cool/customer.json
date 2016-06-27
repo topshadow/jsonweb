@@ -1,7 +1,7 @@
 {
   "dataType": "customer setting",
   "navbar":{
-    "templateUrl":"templates/navbar/blog.html"
+    "templateUrl":"templates/navbar/.html"
   },
   "pages": {
     "index": {

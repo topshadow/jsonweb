@@ -1,38 +1,66 @@
-<div class="navbar navbar-inverse">
-    <div class="navbar-header">
-        <!-- 自适应隐藏导航展开按钮 -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <!-- 导航条LOGO -->
-        <a class="navbar-brand" href="#">Brand</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="">首页</a></li>
-            <li><a href="">博文</a></li>
-            <li><a href="">留言</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单 <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">导航一</a></li>
-                    <li><a href="#">导航二</a></li>
-                    <li><a href="#">导航三</a></li>
-                </ul>
-            </li>
-        </ul>
-        <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="row padding-tb">
+            <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+                <div class="navbar-header navbar-left">
+                    <a class="navbar-brand-mc" href="/">
+                        <img src="{{default.logo}}" alt="logo">
+                    </a>
+                </div>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-        </ul>
+            <!--<div class="hidden-xs visible-sm-block col-sm-2">-->
+            <!--<div class="navbar-header navbar-left">-->
+            <!--<a class="navbar-brand-mc" href="/">-->
+            <!--<img src="{{default.logo}}" alt="logo">-->
+            <!--</a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="visible-xs-block col-xs-2">-->
+            <!--<div class="navbar-header navbar-left">-->
+            <!--<a class="navbar-brand-mc" href="/">-->
+            <!--<img src="{{default.logo}}" alt="logo">-->
+            <!--</a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <div class="col-xs-8 col-sm-5 col-md-5 col-lg-5">
+                <!--<div class="navbar-search navbar-left">-->
+                <form class="navbar-form-mc padding-tb" method="get" action="/course/search" role="search">
+                    <div class="input-group input-group-nav">
+                        <input type="text" class="form-control" id="input-search" name="key" placeholder="查找课程...">
+                                <span class="input-group-btn">
+                                    <a role="button" class="btn" aria-label="Left Align" onclick="$(this).closest('form').submit()">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </a>
+                                </span>
+                    </div>
+                </form>
+                <!--</div>-->
+            </div>
+            <div class="hidden-xs col-sm-5 col-md-4 col-lg-4">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li id="nav-index"><a href="/">首页</a></li>
+                        <li id="nav-course" class="active"><a href="/course">课程</a></li>
+                        <li id="nav-notice"><a href="/announcement">公告</a></li>
+                        <li><a href="/">登录</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="visible-xs-block col-xs-2">
+                <div class="nav nav-hamburger pull-right">
+                    <a href="#ham" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/course">课程</a></li>
+                        <li id="xs-nav-notice"><a href="/announcement">公告</a></li>
+                        <li><a href="/">登录</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-</div>
+</nav>
