@@ -1,0 +1,179 @@
+{
+  "dataType": "customer setting",
+  "navbar":{
+    "templateUrl":"templates/navbar/nav4.html"
+  },
+  "footbar":{
+    "templateUrl":"templates/footbar/foot2.html"
+  },
+  "pages": {
+    "index": {
+      "pageName": "/index",
+      "pageComponents": [
+        {
+          "name":"bootstrap 图片轮播",
+          "templateUrl":"templates/components/banner/bootstrap-banner.html",
+          "type":"with-title",
+          "images":[{
+            "src":"./pic/eea30cf431adcbeff5aafa28aeaf2edda3cc9f07.jpg",
+            "title":"创意型设计",
+            "summary":"一直秉持着 帮助民族企业与世界互联的企业宗旨，打造业内知名的网站建设品牌。从市场的角度和客户的需求出发，帮助企业及产品树立良好的形象，拓展市场空间，提高企业竞争优势。"
+          },
+            {
+              "src":"./pic/ae539822720e0cf398ccc9d50846f21fbe09aae2.jpg.png",
+              "title":"1000台云服务器",
+              "summary":"拥有近1000太高端云计算服务器,上海,成都,长沙,武汉万兆机房介入国家骨干网络"
+            },
+            {
+              "src":"./pic/ef08b3de9c82d158754fdc9f820a19d8bd3e42d4.jpg",
+              "title":"上海网站建设首选品牌-上海旅烨网络科技有限公司",
+              "summary":"一直秉持着“帮助民族企业与世界互联”的企业宗旨，打造业内知名的网站建设品牌。从市场的角度和客户的需求出发，帮助企业及产品树立良好的形象，拓展市场空间，提高企业竞争优势。"
+            }
+          ]
+        },
+
+        {
+          "name":"海互动 section",
+          "templateUrl":"templates/components/sea-section.html",
+          "backgroundImage":"./pic/934ad11373f08202a4fa161149fbfbedab641bb1.jpg",
+          "title":""
+        }
+
+      ]
+    }
+    ,
+      "production":{
+        "pageName":"/production",
+        "pageComponents":[
+          {
+            "name":"twibble-about 一个圆头像",
+            "templateUrl":"templates/components/about/twibble-about.html",
+            "images":[
+              {"src":"http://www.alvye.cn/statics/images/2016/ad_year02.png",
+                "title":"旅烨教育",
+                "summary":"上海旅烨网络科技有限公司隶属于旅烨集团，于2011年公司于上海市正式注册成立。自成立以来一直致力于大型网站开发、移动互联网技术、网站建设、网页设计、程序开发、网站运营维护、网络整合营销、电商运营、网站改版、域名注册、服务器租用..."},
+              {"src":"http://www.alvye.cn/statics/images/2016/ad_year05.png",
+                "title":"旅烨模板云即将上线",
+                "summary":"稳定、高效、快捷、安全 更好践行“帮助民族企业与世界互联”的使命"
+              }
+            ]
+          },
+          {
+            "name":"twibble-prodcut",
+            "templateUrl":"templates/components/product/twibble-product.html",
+            "itemlist":[{
+              "icon":"fa-group",
+              "title":"强大的团队",
+              "summary":"600人大型团队"
+            },
+              {
+                "icon":"fa-clock-o",
+                "title":"高效率",
+                "summary":"职责分工明确"
+              },
+              {
+                "icon":"fa-life-ring",
+                "title":"专业",
+                "summary":"多年的团队经验"
+              },{
+                "icon":"fa-group",
+                "title":"强大的团队",
+                "summary":"600人大型团队"
+              },
+              {
+                "icon":"fa-clock-o",
+                "title":"高效率",
+                "summary":"职责分工明确"
+              },
+              {
+                "icon":"fa-life-ring",
+                "title":"专业",
+                "summary":"多年的团队经验"
+              }
+            ]
+          },
+          {
+            "name":"sea-product-list",
+            "templateUrl":"templates/components/product/sea-product.html",
+            "images":[{"src":"http://www.seakong.cn/img/work/201605241.jpg"},
+              {"src":"http://www.seakong.cn/img/work/2015080-0.jpg"},
+              {"src":"http://www.seakong.cn/img/work/babalax.jpg"},
+              {"src":" http://www.seakong.cn/img/work/yblx.jpg"}
+            ]
+          },
+          {
+            "name":"zarget-product-banner",
+            "templateUrl":"templates/components/product/zarget-product-banner.html"
+          }
+        ]
+      },
+    "team":{
+      "pageName":"/team",
+      "pageComponents":[
+        {
+  "name" : "海互动团队内容",
+  "templateUrl":"templates/components/sea-team-content.html",
+  "title":"我们的产品",
+          "teamSummary":"稳定、高效、快捷、安全 更好践行“帮助民族企业与世界互联”的使命",
+  "teamSummary2": "还在等着什么,快加入我们吧",
+  "teammates":[{
+    "image" : "http://www.seakong.cn/img/work/babalax.jpg",
+    "name" : "babala",
+    "post" : "时尚音乐"
+  },
+    {
+      "image" : " http://www.seakong.cn/img/work/201605241.jpg",
+      "name" : "PHBP",
+      "post" : "商业建站"
+    },
+    {
+      "image" : " http://www.seakong.cn/img/work/2015080-0.jpg",
+      "name" : "韵味",
+      "post" : "富有时尚感的建站"
+    },
+    {
+      "image" : " http://www.seakong.cn/img/work/yblx.jpg",
+      "name" : "艾美",
+      "post" : "化妆品"
+    }]
+},
+        {
+        "templateUrl":"templates/components/team/bootstrap-media-object.html",
+          "images":[{
+            "src":"http://www.alvye.cn/statics/images/2016/team01.jpg",
+            "title":"旅烨户外互动",
+            "summary":"上海旅烨网络科技有限公司一直秉承着“帮助民族企业与世界互联”的使命，经过多年的发展，集团拥有12家下属控股企业，产业范围涵盖科技、教育、金融、云计算、创业投资等领域。集团拥有专业技术人员近600人，办公场地近8000平米，目前已经为超过18000家客户提供了服务，客户遍布北美、欧洲、韩国、上海、北京、广州、长沙、重庆、成都、武汉等地区，其中国内外多家知名企业选择了旅烨。",
+            "position":"pull-left"
+          },
+            {"src":"http://www.alvye.cn/statics/images/2016/team05.jpg",
+            "title":"旅烨互联网学院首届元旦联欢晚会",
+            "summary":"企业文化具有使企业成员从内心产生一种高昂情绪和奋发进取精神的效应。企业文化把尊重人作为中心内容，以人的管理为中心。",
+              "position":"pull-right"
+            }]
+      }]
+    },
+    "about":{
+      "pageName":"/about",
+      "pageComponents":[
+        {
+          "name": "海互动的 文案部分",
+          "templateUrl": "templates/components/sea-article.html",
+          "background":"url(./pic/20168a82b9014a90e3e0c393ab773912b21beec7.jpg)",
+          "title": "旅烨集团,联合科技",
+          "p1": "核心团队拥有多年行业经验的资深团队，涵盖创意，策略，技术等各领域专业人才，我们坚信每一个成功项目是良好团队合作的成果，为客户提供专业有效的网络解决方案。",
+          "p2": "目前集团拥有12家下属控股企业，产业范围涵盖科技、教育、金融、云计算、创业投资等领域。集团拥有专业技术人员近600人，办公场地近8000平米，目前已经为超过18000家客户提供了服务，客户遍布北美、欧洲、韩国、上海、北京、广州、长沙、重庆、成都、武汉等地区，其中国内外多家知名企业选择了旅烨。",
+          "btn": {
+            "link": "production",
+            "name": "View"
+          }
+        },
+
+        {
+      "name" : "sea-contact-wrap",
+      "templateUrl":"templates/components/about/sea-contact-wrap.html"
+    }
+
+      ]
+    }
+  }
+}

@@ -2,24 +2,9 @@
   "name": "jsonweb",
   "version": "0.0.1",
   "dependencies": {
-    "bower": "^1.7.9",
-    "browser-sync": "^2.13.0",
-    "browserify": "^13.0.1",
-    "express": "^4.14.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-jshint": "^2.0.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7",
-    "jshint": "^2.9.2",
-    "lodash.assign": "^4.0.9",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.7.0"
-  },
-  "scripts": {},
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+
+    "express": "^4.14.0"
+     },
+  "scripts": {}
+
 }

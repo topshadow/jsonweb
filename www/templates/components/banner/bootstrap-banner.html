@@ -33,7 +33,7 @@ type : with-title
 
     <!--带有标题的图片轮播-->
     <div  ng-repeat="pic in myData.images" ng-class="{'item':true,'active':$index==0}" ng-show="myData.type=='with-title'">
-        <img src="{{pic.src}}" alt="..." class="">
+        <img src="{{pic.src}}" alt="..." class="img-responsive" width="100%">
         <div class="carousel-caption">
             <h3 ng-show="myData.type=='with-title'">{{pic.title}}</h3>
             <p>{{pic.summary}}</p>
