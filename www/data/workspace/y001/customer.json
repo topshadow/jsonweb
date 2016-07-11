@@ -1,6 +1,9 @@
 {
   "dataType": "customer setting",
+"navbar":{},
+  "footbar":{
 
+  },
   "pages": [
     {
         "name": "index",
@@ -10,10 +13,6 @@
       "name":"about",
       "templateUrl":"templates/footbar/foot4.html"
     }
-
-
-
-
   ]
 
 }
