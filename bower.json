@@ -1,4 +1,7 @@
 {
   "name": "music",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-route": "^1.5.7"
+  }
 }

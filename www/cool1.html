@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
     <script src="lib/ionic.bundle.min.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+
 
     <script>
         var config = {
@@ -34,14 +36,14 @@
     <!--js文件夹下的所有文件-->
     <script src="all.js"></script>
 </head>
-<body ng-controller="allCtrl">
+<body >
 
 
 
 <!--navbar-->
 <div ng-include="customer.navbar.templateUrl" ng-init="myData = customer.navbar"></div>
 <!--pages-->
-<div ui-view=""></div>
+<ng-view></ng-view>
 <!--footbar-->
 <div ng-include="customer.footbar.templateUrl" ng-init="myData=customer.footbar"></div>
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
