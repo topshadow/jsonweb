@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet/less" type="text/css" href="css/beauty.less">
     <link rel="stylesheet/less" type="text/css" href="css/cool.less">
-    <script src="lib/ionic.bundle.min.js"></script>
 
+    <script src="lib/ionic.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
     <script>
         var config = {
             localUrl : "data/beauty/",
@@ -31,16 +32,16 @@
     <!--js文件夹下的所有文件-->
     <script src="all.js"></script>
 </head>
-<body ng-controller="allCtrl">
+<body >
 
 
 
 <!--navbar-->
-<div ng-include="customer.navbar.templateUrl" ng-init="myData = customer.navbar"></div>
+<div ng-include="navbar.templateUrl" ng-init="myData = navbar"></div>
 <!--pages-->
-<div ui-view=""></div>
+<ng-view></ng-view>
 <!--footbar-->
-<div ng-include="customer.footbar.templateUrl" ng-init="myData=customer.footbar"></div>
+<div ng-include="footbar.templateUrl" ng-init="myData=footbar"></div>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

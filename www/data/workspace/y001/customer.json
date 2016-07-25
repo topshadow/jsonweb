@@ -1,18 +1,28 @@
 {
   "dataType": "customer setting",
-"navbar":{},
+"navbar":{
+  "templateUrl":"templates/navbar/nav4.html"
+},
   "footbar":{
-
+    "templateUrl":"templates/footbar/foot.html"
   },
   "pages": [
     {
         "name": "index",
-        "templateUrl": "templates/navbar/nav4.html"
+        "templateUrl": "templates/components/sea-service-content.html",
+        "websiteName":"网站的名字"
     },
     {
       "name":"about",
       "templateUrl":"templates/footbar/foot4.html"
+    },
+    {
+      "name":"team",
+      "templateUrl":"templates/components/banner/bootstrap-swarp.html"
+    },
+    {
+      "name":"product",
+      "templateUrl":"templates/components/product/fontawsome-product.html"
     }
   ]
-
 }
