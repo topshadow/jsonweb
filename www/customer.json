@@ -1,0 +1,35 @@
+{
+  "dataType": "customer setting",
+  "navbar":{
+  "templateUrl":"templates/navbar/nav1.html"
+  },
+  "footbar":{
+    "templateUrl":"templates/footbar/foot.html"
+  },
+  "pages": [
+    {
+      "name": "index",
+      "components":
+      [
+        {
+          "templateUrl":"templates/components/sea-section.html",
+          "data":{
+          "websiteName":"this is my website"
+         }
+        }
+      ]
+    },
+    {
+      "name":"about",
+      "templateUrl":"templates/footbar/foot4.html"
+    },
+    {
+      "name":"team",
+      "templateUrl":"templates/components/banner/bootstrap-swarp.html"
+    },
+    {
+      "name":"product",
+      "templateUrl":"templates/components/product/fontawsome-product.html"
+    }
+  ]
+}

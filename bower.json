@@ -2,6 +2,7 @@
   "name": "music",
   "version": "0.0.1",
   "dependencies": {
-    "angular-route": "^1.5.7"
+    "angular-route": "^1.5.7",
+    "angular-strap": "^2.3.9"
   }
 }
