@@ -1,5 +1,5 @@
 <div ng-repeat="component in data.components"   ng-class="websiteData.isEdit?'edit':'preview'" style="">
-    <button type="button" class="btn btn-lg btn-primary"  data-animation="am-slide-left" ng-click="editComponent()">编辑
+    <button type="button" class="btn btn-lg btn-primary"  data-animation="am-slide-left" ng-click="editComponent()" ng-if="websiteData.isEdit">编辑
         <br>
     </button>
 

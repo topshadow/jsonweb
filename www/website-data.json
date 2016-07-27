@@ -5,7 +5,9 @@
   "dataType": "customer setting",
   "navbar":{
   "templateUrl":"templates/navbar/nav1.html",
-  "type":"navbar"
+  "type":"navbar",
+     "logo":"http://www.alvye.cn/statics/images/2016/top_logo.png"
+
   },
   "footbar":{
     "templateUrl":"templates/footbar/foot.html"
