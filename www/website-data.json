@@ -4,7 +4,8 @@
   "isEdit":true,
   "dataType": "customer setting",
   "navbar":{
-  "templateUrl":"templates/navbar/nav1.html"
+  "templateUrl":"templates/navbar/nav1.html",
+  "type":"navbar"
   },
   "footbar":{
     "templateUrl":"templates/footbar/foot.html"
@@ -15,7 +16,7 @@
       "components":
       [
         {
-          "templateUrl":"templates/components/sea-section.html",
+          "templateUrl":"templates/components/sea-service-content.html",
           "data":{
           "websiteName":"this is my website"
          }

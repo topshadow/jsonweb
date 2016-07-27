@@ -1,6 +1,10 @@
+
+
+
+
 var $routeProviderReference;
 var rootScope;
-var app = angular.module('app',['ngRoute','mgcrea.ngStrap.modal','mgcrea.ngStrap.aside','mgcrea.ngStrap.tooltip'] )
+var app = angular.module('app',['ngRoute','ngAnimate','mgcrea.ngStrap','mgcrea.ngStrap.modal','mgcrea.ngStrap.aside','mgcrea.ngStrap.tooltip'] )
     .config(function($routeProvider){
         $routeProviderReference = $routeProvider;
     })
@@ -31,7 +35,10 @@ var app = angular.module('app',['ngRoute','mgcrea.ngStrap.modal','mgcrea.ngStrap
         });
     });
 
-app.controller('initDataController',function($rootScope,$scope,$location){
+
+
+
+app.controller('initDataController',function($rootScope,$scope,$location,setting){
     console.log('init data');
     var path = $location.path().replace('/','');
     var  pages = $rootScope.websiteData.pages;
@@ -45,12 +52,57 @@ app.controller('initDataController',function($rootScope,$scope,$location){
         }
     }
 
+    $rootScope.editComponent = function(component){
+        switch (component.type){
+            case "navbar":
+                setting.setNavbar(component,'templates/edit/navbarEdit.html');
+            break;
+            default:
+                alert('error unknow component type');
+                break;
+        }
+
+
+    };
+
 
     // $('.carousel').carousel({
     //                 interval:1000
     // })
-})
+});
 
-angular.module('app').factory('myAside',function(){
+angular.module('app')
+.factory('setting',function($aside,$rootScope){
+    return {
 
-})
+        //实际上
+        setNavbar: function (component,editTemplate) {
+            var myAside = $aside({title: '编辑导航',
+                animation:'am-fade-and-slide-right',
+                placement:'right',
+                templateUrl: 'templates/edit/navbarEdit.html'
+
+            });
+            // Pre-fetch an external template populated with a custom scope
+            // var myOtherAside = $aside({title:'编辑导航',template:'templates/edit/navbarEdit.html',show:true});
+            // Show when some event occurs (use $promise property to ensure the template has been loaded)
+            // myAside.$promise.then(function () {
+            //     myAside.show();
+            // });
+        },
+        asideRight:function(){
+
+        }
+    }
+
+});
+
+
+
+angular.module('app')
+    .config(function($asideProvider) {
+        angular.extend($asideProvider.defaults, {
+            animation: 'am-fadeAndSlideLeft',
+            placement: 'left'
+        });
+    });

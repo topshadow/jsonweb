@@ -1,6 +1,6 @@
 var $routeProviderReference;
 var rootScope;
-var app = angular.module('app',['ngRoute','mgcrea.ngStrap.modal','mgcrea.ngStrap.aside','mgcrea.ngStrap.tooltip'] )
+var app = angular.module('app',['ngRoute','ngAnimate','mgcrea.ngStrap','mgcrea.ngStrap.modal','mgcrea.ngStrap.aside','mgcrea.ngStrap.tooltip'] )
     .config(function($routeProvider){
         $routeProviderReference = $routeProvider;
     })
@@ -49,4 +49,4 @@ app.controller('initDataController',function($rootScope,$scope,$location){
     // $('.carousel').carousel({
     //                 interval:1000
     // })
-})
+});

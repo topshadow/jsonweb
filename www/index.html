@@ -14,50 +14,56 @@
     <link href="http://www.alvye.cn/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+
     <link href="lib/angular-motion/dist/angular-motion.css">
     <link rel="stylesheet" href="lib/bootstrap-additions/dist/bootstrap-additions.min.css">
-
-    <link href="css/less.less">
-
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="css/less.less">
+    <link rel="stylesheet" href="css/style.css">
+
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-route/angular-route.min.js"></script>
     <script src="lib/angular-strap/dist/angular-strap.min.js"></script>
     <script src="lib/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
-
     <!--js文件夹下的所有文件-->
-    <script src="app.bunld.js"></script>
+    <script src="js/app.bundle.js"></script>
+
+    <style>
+        .aside-backdrop {
+            background-color: transparent;
+        }
+    </style>
+
 
 </head>
-<body >
+<body>
+
+
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default btn-primary" ng-click="websiteData.isEdit=true">Edit</button>
+        <button type="button" class="btn btn-default btn-primary" ng-click="websiteData.isEdit=true">编辑</button>
     </div>
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default btn-info" ng-click="save()">save</button>
+        <button type="button" class="btn btn-default btn-info" ng-click="save()">保存</button>
     </div>
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default btn-success" ng-click="websiteData.isEdit=false">Preview</button>
+        <button type="button" class="btn btn-default btn-success" ng-click="websiteData.isEdit=false">预览</button>
     </div>
 </div>
 
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default btn-primary" ng-click="chooseComponent()">Choose Component</button>
+        <button type="button" class="btn btn-default btn-primary" ng-click="editComponent()"> 添加组件</button>
     </div>
 </div>
 
 <!--navbar-->
-<div    ng-class="websiteData.isEdit?'edit':'preview'" >
-    <button type="button" class="btn btn-lg btn-danger" data-template-url="templates/components/sea-section.html" data-placement="left" data-animation="am-slide-left" bs-aside="aside" data-container="body">Custom aside
-        <br>
-        <small>(using data-template)</small>
+<div    ng-class="websiteData.isEdit?'edit':'preview'"  >
+    <button type="button" class="btn btn-lg btn-danger" ng-if="websiteData.isEdit"  ng-click="editComponent(websiteData.navbar)">编辑
     </button>
-<div ng-include="websiteData.navbar.templateUrl"></div>
+<div ng-include="websiteData.navbar.templateUrl" ng-init="data = websiteData.navbar"></div>
 </div>
 <!--pages-->
 <ng-view></ng-view>
@@ -66,8 +72,11 @@
 <!--foreach show curren page-->
 
 <!--footbar-->
-<div ng-include="websiteData.footbar.templateUrl" ></div>
-
+<div    ng-class="websiteData.isEdit?'edit':'preview'"  >
+    <button type="button" class="btn btn-lg btn-danger" ng-if="websiteData.isEdit"  ng-click="editComponent(websiteData.footbar)">编辑
+    </button>
+<div ng-include="websiteData.footbar.templateUrl"  ng-click="editComponent(websiteData.footbar)" ng-init="data = websiteData.footbar"></div>
+</div>
 
 <script src="//cdn.bootcss.com/less.js/2.7.1/less.min.js"></script>
 </body></html>
