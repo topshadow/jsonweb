@@ -14,7 +14,7 @@ var app = angular.module('app',['ngRoute','mgcrea.ngStrap.modal','mgcrea.ngStrap
         // });
         });
         $http.get("customer.json").success(function(data){
-            $rootScope.data=data;
+            $rootScope.websiteData=data;
             var loop , currentRoute;
             for(loop = 0; loop < data.pages.length; loop++){
                 currentRoute = data.pages[loop];
@@ -34,7 +34,7 @@ var app = angular.module('app',['ngRoute','mgcrea.ngStrap.modal','mgcrea.ngStrap
 app.controller('initDataController',function($rootScope,$scope,$location){
     console.log('init data');
     var path = $location.path().replace('/','');
-    var  pages = $rootScope.data.pages;
+    var  pages = $rootScope.websiteData.pages;
     //search curennt Page Dats
 
     for(var i=0;i<pages.length;i++){

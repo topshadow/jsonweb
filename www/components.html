@@ -1,4 +1,4 @@
-<div ng-repeat="component in data.components " >
-    sadad
-<div ng-include="component.templateUrl"></div>
+<div ng-repeat="component in data.components"   ng-class="websiteData.isEdit?'edit':'preview'" style="border:2px dashed blue ">
+
+<div ng-include="component.templateUrl" ng-init="data = component.data" ></div>
 </div>

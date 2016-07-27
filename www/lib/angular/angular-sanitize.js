@@ -61,7 +61,7 @@ var $sanitizeMinErr = angular.$$minErr('$sanitize');
          angular.module('sanitizeExample', ['ngSanitize'])
            .controller('ExampleController', ['$scope', '$sce', function($scope, $sce) {
              $scope.snippet =
-               '<p style="color:blue">an html\n' +
+               css +
                '<em onmouseover="this.textContent=\'PWN3D!\'">click here</em>\n' +
                'snippet</p>';
              $scope.deliberatelyTrustDangerousSnippet = function() {
@@ -252,7 +252,7 @@ var svgElements = toMap("circle,defs,desc,ellipse,font-face,font-face-name,font-
 // Blocked Elements (will be stripped)
 var blockedElements = toMap("script,style");
 
-var validElements = angular.extend({},
+var validElements = cssar.extend({},
                                    voidElements,
                                    blockElements,
                                    inlineElements,
@@ -272,7 +272,7 @@ var htmlAttrs = toMap('abbr,align,alt,axis,bgcolor,border,cellpadding,cellspacin
 var svgAttrs = toMap('accent-height,accumulate,additive,alphabetic,arabic-form,ascent,' +
     'baseProfile,bbox,begin,by,calcMode,cap-height,class,color,color-rendering,content,' +
     'cx,cy,d,dx,dy,descent,display,dur,end,fill,fill-rule,font-family,font-size,font-stretch,' +
-    'font-style,font-variant,font-weight,from,fx,fy,g1,g2,glyph-name,gradientUnits,hanging,' +
+    'font-style,font-variant,font-weightcss,fx,fy,g1,g2,glyph-name,gradientUnits,hanging,' +
     'height,horiz-adv-x,horiz-origin-x,ideographic,k,keyPoints,keySplines,keyTimes,lang,' +
     'marker-end,marker-mid,marker-start,markerHeight,markerUnits,markerWidth,mathematical,' +
     'max,min,offset,opacity,orient,origin,overline-position,overline-thickness,panose-1,' +

@@ -31,15 +31,15 @@
 
 
 <!--navbar-->
-<div ng-include="data.navbar.templateUrl" ></div>
+<div ng-include="websiteData.navbar.templateUrl" ></div>
 <!--pages-->
-<!--<ng-view></ng-view>-->
-<div ng-repeat="component in data.components" ng-include="comppnent.templateUrl"></div>
+<ng-view></ng-view>
+<!--<div ng-repeat="component in data.components" ng-include="comppnent.templateUrl"></div>-->
 
 <!--foreach show curren page-->
 
 <!--footbar-->
-<div ng-include="data.footbar.templateUrl" ></div>
+<div ng-include="websiteData.footbar.templateUrl" ></div>
 
 
 <script src="//cdn.bootcss.com/less.js/2.7.1/less.min.js"></script>

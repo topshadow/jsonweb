@@ -492,7 +492,7 @@ function inherit(parent, extra) {
  *
  * @description
  * A function that performs no operations. This function can be useful when writing code in the
- * functional style.
+ * functional css.
    ```js
      function foo(callback) {
        var result = calculateResult();
@@ -512,7 +512,7 @@ noop.$inject = [];
  *
  * @description
  * A function that returns its first argument. This function is useful when writing code in the
- * functional style.
+ * functional css.
  *
    ```js
      function transformer(transformationFn, value) {
@@ -1101,7 +1101,7 @@ var csp = function() {
                     ngCspElement.getAttribute('data-ng-csp');
       csp.rules = {
         noUnsafeEval: !ngCspAttribute || (ngCspAttribute.indexOf('no-unsafe-eval') !== -1),
-        noInlineStyle: !ngCspAttribute || (ngCspAttribute.indexOf('no-inline-style') !== -1)
+        noInlineStyle: !ngCspAttribute || (ngCspAttribute.indexOf('no-inline-css') !== -1)
       };
     } else {
       csp.rules = {
@@ -5480,8 +5480,8 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @description Performs an inline animation on the element which applies the provided to and from CSS styles to the element.
        * If any detected CSS transition, keyframe or JavaScript matches the provided className value, then the animation will take
        * on the provided styles. For example, if a transition animation is set for the given classNamem, then the provided `from` and
-       * `to` styles will be applied alongside the given transition. If the CSS style provided in `from` does not have a corresponding
-       * style in `to`, the style in `from` is applied immediately, and no animation is run.
+       * `to` styles will be applied alongside the given transition. If the CSS css provided in `from` does not have a corresponding
+       * css in `to`, the css in `from` is applied immediately, and no animation is run.
        * If a JavaScript animation is detected then the provided styles will be given in as function parameters into the `animate`
        * method (or as part of the `options` parameter):
        *
@@ -27911,7 +27911,7 @@ var ngOptionsDirective = ['$compile', '$parse', function($compile, $parse) {
         element.disabled = option.disabled;
         // NOTE: The label must be set before the value, otherwise IE10/11/EDGE create unresponsive
         // selects in certain circumstances when multiple selects are next to each other and display
-        // the option list in listbox style, i.e. the select is [multiple], or specifies a [size].
+        // the option list in listbox css, i.e. the select is [multiple], or specifies a [size].
         // See https://github.com/angular/angular.js/issues/11314 for more info.
         // This is unfortunately untestable with unit / e2e tests
         if (option.label !== element.label) {
@@ -30711,4 +30711,4 @@ $provide.value("$locale", {
 
 })(window, document);
 
-!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
+!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<css type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</css>');

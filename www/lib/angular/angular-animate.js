@@ -860,13 +860,13 @@ function createLocalCacheLookup() {
   };
 }
 
-// we do not reassign an already present style value since
-// if we detect the style property value again we may be
+// we do not reassign an already present css value since
+// if we detect the css property value again we may be
 // detecting styles that were added via the `from` styles.
 // We make use of `isDefined` here since an empty string
 // or null value (which is what getPropertyValue will return
-// for a non-existing style) will still be marked as a valid
-// value for the style (a falsy value implies that the style
+// for a non-existing css) will still be marked as a valid
+// value for the css (a falsy value implies that the css
 // is to be removed at the end of the animation). If we had a simple
 // "OR" statement then it would not be enough to catch that.
 function registerRestorableStyles(backup, node, properties) {
@@ -1256,7 +1256,7 @@ var $AnimateCssProvider = ['$animateProvider', function($animateProvider) {
         blockTransitions(node, false);
 
         forEach(temporaryStyles, function(entry) {
-          // There is only one way to remove inline style properties entirely from elements.
+          // There is only one way to remove inline css properties entirely from elements.
           // By using `removeProperty` this works, but we need to convert camel-cased CSS
           // styles down to hyphenated values.
           node.style[entry[0]] = '';
@@ -1381,9 +1381,9 @@ var $AnimateCssProvider = ['$animateProvider', function($animateProvider) {
           }
         };
 
-        // checking the stagger duration prevents an accidentally cascade of the CSS delay style
+        // checking the stagger duration prevents an accidentally cascade of the CSS delay css
         // being inherited from the parent. If the transition duration is zero then we can safely
-        // rely that the delay value is an intentional stagger delay style.
+        // rely that the delay value is an intentional stagger delay css.
         var maxStagger = itemIndex > 0
                          && ((timings.transitionDuration && stagger.transitionDuration === 0) ||
                             (timings.animationDuration && stagger.animationDuration === 0))
