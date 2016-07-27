@@ -2,4 +2,29 @@
     border:2px dashed blue;
 }
 
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
 
+.topNav{width:100%; margin: 0 auto;vertical-align: middle;}
+.topNav .top_logo{ float: left;}
+.topNav .top_nav{ float: right;margin-top: 30px;}
+.topNav .top_nav li{ display: inline-block; width: 120px; text-align: center;}
+
+
+.content2{ margin-top: 20px;}
+.content2 .text-title{ margin-top: 10px;}
+.picture_table{ width: 100%;}
+.picture_table tr td{ width: 20%; }
+.picture_table tr td:hover{opacity:0.6;filter:alpha(opacity=60); }
+.learnMore{cursor: pointer; display: inline-block; width: 150px; border-radius: 30px; border: 1px solid #ccc; height: 40px; line-height: 40px;}
