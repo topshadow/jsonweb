@@ -1,17 +1,17 @@
 var $routeProviderReference;
 var rootScope;
-var app = angular.module('app',['ngRoute','ngAnimate','mgcrea.ngStrap.modal','mgcrea.ngStrap.aside','mgcrea.ngStrap.tooltip'] )
+var app = angular.module('app',['ngRoute','mgcrea.ngStrap.modal','mgcrea.ngStrap.aside','mgcrea.ngStrap.tooltip'] )
     .config(function($routeProvider){
         $routeProviderReference = $routeProvider;
     })
-   .run( function($route, $http, $rootScope){
+    .run( function($route, $http, $rootScope){
         rootScope =$rootScope;
 
         http = $http;
         $http.get('default.json').success(function(data){
-          // $rootScope.$apply(function(){
-              $rootScope.default=data;
-        // });
+            // $rootScope.$apply(function(){
+            $rootScope.default=data;
+            // });
         });
         $http.get("website-data.json").success(function(data){
             $rootScope.websiteData=data;
@@ -49,4 +49,8 @@ app.controller('initDataController',function($rootScope,$scope,$location){
     // $('.carousel').carousel({
     //                 interval:1000
     // })
+})
+
+angular.module('app').factory('myAside',function(){
+
 })

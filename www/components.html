@@ -1,4 +1,8 @@
-<div ng-repeat="component in data.components"   ng-class="websiteData.isEdit?'edit':'preview'" style="border:2px dashed blue ">
-
+<div ng-repeat="component in data.components"   ng-class="websiteData.isEdit?'edit':'preview'" style="">
+    <button ng-if="websiteData.isEdit" type="button" class="btn btn-lg btn-danger"
+            data-template-url="templates/navbar/nav1.html" data-placement="left" data-animation="am-slide-left" bs-aside="aside" data-container="body">Custom aside
+        <br>
+        <small></small>
+    </button>
 <div ng-include="component.templateUrl" ng-init="data = component.data" ></div>
 </div>
