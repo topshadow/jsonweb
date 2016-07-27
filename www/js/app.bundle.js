@@ -80,7 +80,7 @@ angular.module('app')
             var myAside = $aside({title: '编辑导航',
                 animation:'am-fade-and-slide-right',
                 placement:'right',
-                templateUrl: 'templates/edit/navbarEdit.html'
+                templateUrl: editTemplate
 
             });
             // Pre-fetch an external template populated with a custom scope

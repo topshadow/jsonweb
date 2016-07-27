@@ -18,11 +18,16 @@
       "components":
       [
         {
-          "templateUrl":"templates/components/sea-service-content.html",
+          "templateUrl":"templates/banner/banner1.html",
           "data":{
           "websiteName":"this is my website"
          }
+        },
+        {
+          "templateUrl":"templates/module/module1.html"
+
         }
+
       ]
     },
     {
